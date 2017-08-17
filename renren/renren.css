@@ -1,0 +1,98 @@
+/* 初始化样式 */
+*{
+    margin: 0;
+    padding: 0
+}
+ul{
+    list-style: none
+}
+a{
+    text-decoration: none
+}
+.clearfix::after{
+    content: ".";
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+
+}
+.clearfix{
+    *zoom:1
+}
+.container{
+    width: 1094px;
+    margin: 0 auto
+}
+
+/* 页面头部 strat================= */
+#header{
+    /* background: #666; */
+    width: 1094px;
+    height: 60px;
+    margin: 0 auto;
+}
+/* logo */
+#header .logo{
+    width: 184px;
+    height: 60px;
+    background: red;
+    background: url(logo-new@2x.png) no-repeat 0 14px;
+    -webkit-background-size: ;
+    background-size:85px
+}
+/* nav */
+#header .nav{
+    /* width: 829px; */
+    height: 37px;
+    padding-top: 23px;
+}
+#header>div{
+    float: left;
+}
+#header .nav ul li {
+    float: left;
+    font-size: 16px;
+}
+#header .nav ul li a{
+    color: #666
+}
+#header .relog {
+    float: right;
+    height: 37px;
+    padding-top:23px;
+}
+#header .nav ul li:first-child {
+    padding-right: 60px;
+}
+#header .nav ul li:first-child a{
+    color: #ffa987
+}
+#header .nav ul li+li{
+    padding-right: 45px;
+}
+/* 注册登陆 */
+#header .relog{
+    font-size: 16px;
+    color: #407ebc;
+    width: 84px;
+}
+#header .relog a{
+    color: #407ebc; 
+}
+/* 页面头部 end=================== */
+
+/* banner============================= */
+#banner{
+    background: #ff7630;
+    height:298px;
+    /* background: url(bjtp.jpg) no-repeat center; */
+}
+#banner .content{
+    width: 1390px;
+    height:298px;  
+    background: url(bjtp.jpg) no-repeat center; 
+    background-size: cover;
+}
+}
+/* banner============================= */
