@@ -1,0 +1,609 @@
+/*
+* @Author: Bruce
+* @Date:   2017-08-10 11:47:16
+* @Last Modified by:   Bruce
+* @Last Modified time: 2017-08-10 15:19:15
+*/
+
+/* 这个css文件是每个页面都可以使用的，因为有很多页面的头部和底部是一样或相似，所以把头部和底部的样式单独抽取出来，避免在其他页面重复 */
+
+/* 顶部  ============================B */
+#webtop{
+	background: #1b66fd
+}
+#webtop  .gg i{
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer
+}
+#webtop .gg{
+	position: relative;
+}
+/* 頂部===============================E */
+
+/* 短菜单		B======================= */
+#shortnav{
+	background: #e3e4e5;
+	height: 30px;
+}
+#shortnav .fl {
+	line-height: 30px;
+	margin-left: 210px;
+}
+#shortnav .fl i{
+	color: #f10215
+}
+#shortnav .fr ul li {
+	float: left;
+	line-height: 30px;
+	font-size: 12px;
+} 
+#shortnav .fr ul li a{
+	color: #999;
+}
+#shortnav .fr ul li a:hover{
+	color: #f10215
+}
+#shortnav .fr ul li.line{
+	height: 11px;
+	margin: 11px 12px 0;
+	border-left: 1px solid #ccc;
+}
+#shortnav .fr ul li:last-child{
+	position: relative;
+}
+#shortnav .fr ul li:last-child .ewm{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%)
+}
+#shortnav .fr ul li:last-child .ewm i{
+	position: absolute;
+	border: 5px solid #ccc;
+	border-bottom-color: #fff;
+	top:-10px;
+	left: 50%;
+	transform: translateX(-50%)
+}
+/* 短菜单		E======================= */
+
+/* 头部  ========================= B*/
+#header{
+	height: 140px
+}
+/* 左侧、 */
+#header .fl{
+	position: relative;
+	width: 190px;
+	height: 140px;
+	background: #fff
+}
+#header .fl a{
+	position: absolute;
+	width: 190px;
+	height: 140px;
+	background:#fff url(../images/logo.png) no-repeat center;
+	top: -30px;
+	text-indent: -100px;
+	overflow: hidden
+}
+/* 右侧--------------- */
+#header .fr{
+	width: 1000px;
+	height: 115px;
+	padding-top: 25px;
+}
+/* 搜索栏 */
+#header .fr .search {
+	float: left;
+	width: 550px;
+	height: 35px;
+	background: #fff;
+	/* border: 1px solid #f10215; */
+	margin-left: 130px;
+	position: relative
+}
+#header .fr .search input[type=text]{
+	width: 493px;
+	height: 33px;
+	border: 1px solid #f10215;
+	float: left;
+	padding-left: 5px;
+}
+#header .fr .search input[type=button]{
+	width: 50px;
+	height: 35px;
+	float: left;
+	color: white;
+	background: #f10215;
+	border:none;
+	cursor: pointer
+}
+#header .fr .search span{
+	width: 19px;
+	height: 15px;
+	position: absolute;
+	background: url(../images/sprite-photo-search.png) no-repeat 0 0;
+	top:10px;
+	right:70px; 
+	cursor: pointer;
+}
+/* 相机 */
+
+/* 我的购物车 */
+#header .fr .car{
+	width: 188px;
+	height: 33px;
+	background: #fff;
+	border: 1px solid #e3e4e5;
+	float: left;
+	line-height: 35px;
+	text-align: center;
+	color: #f10215;
+	margin-left: 30px
+}
+#header .fr .car a{
+	color: #f10215
+}
+/* 搜索热词 */
+#header .fr .hotwords{
+	width: 550px;
+	height: 30px;
+	margin-left: 130px;
+	float: left;
+	line-height: 30px;
+}
+#header .fr .hotwords li{
+	float:left;
+}
+#header .fr .hotwords li+li{
+	margin-left: 10px;
+}
+/* 导航 */
+#header .fr .nav{
+	width: 768px;
+	height: 30px;
+	padding-left: 40px;
+	float: left;
+	margin-top: 15px;
+}
+#header .fr .nav li{
+	float: left;
+	line-height: 30px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #555;
+	margin-right: 30px; 
+}
+#header .fr .nav li.line{
+	border-left: 1px solid #ccc;
+	height: 10px;
+	margin: 0 20px;
+	margin-top: 11px
+} 
+#header .fr .nav li.end{
+	margin-right: 0px
+}
+/* 购物券 */
+#header .fr .cash{
+	width: 190px;
+	height: 40px;
+	float: left
+}
+
+/* 头部   =========================E*/
+
+/* 轮播图广告区   B=================== */
+/* 左侧溢出图片刚刚 */
+#banner .container{
+	position: relative
+}
+#banner .container .cbpic{
+	width: 200px;
+	height: 480px;
+	position: absolute;
+	left:-200px;
+	top: 0
+}
+/* 平铺效果图 */
+#banner .container .cbpic .pupic{
+	width: 10px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left:200px;
+	background:rgba(0, 0, 0,0);
+	/* transform: rotateY(90deg) */
+	transition:all 1s;
+}
+#banner .container .cbpic:hover .pupic{
+	width: 990px;
+	background:url(../images/banner-tp.jpg) no-repeat;
+	background-size: cover
+	
+} 
+/* 左侧导航区 */
+#banner .container>.fl{
+	width: 180px;
+	height: 455px;
+	background: #6e6568;
+	margin-right: 10px;
+	/* padding-left: 12px; */
+	padding-top: 25px;
+}
+#banner .container>.fl li{
+	height: 28px;
+	padding-left: 12px;
+}
+#banner .container>.fl li a{
+	font-size: 14px;
+	color: white
+}
+#banner .container>.fl ul span{
+	color: white;
+}
+#banner .container>.fl li:hover{
+	background: #aaa
+}
+/* 中级模块 */
+#banner .mid{
+	float: left
+}
+/* 中间轮播图区 */
+
+#banner .midtop{
+	position:relative;
+	width: 790px;
+	height: 340px;
+	background: yellow;
+	/* float: left */
+}
+#banner .midtop li{
+	float: left;
+	width: 12px;
+	height: 12px;
+	border-radius:50%;
+	background: #fff;
+	cursor: pointer;
+}
+#banner .midtop li+li{
+	margin-left: 10px;
+}
+#banner .midtop li:hover{
+	background: #db192a
+}
+#banner .midtop ul{
+	position: absolute;
+	height: 20px;
+	padding: 4px 8px 0px 8px;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.5);
+	bottom:20px;
+	left: 50%;
+	margin-left: -91px;
+}
+#banner .midtop span{
+	width: 40px;
+	height: 30px;
+	position: absolute;
+	float: left;
+	background: rgba(0, 0, 0, 0.4);
+	line-height: 30px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-style: bold;
+	bottom: 50%;
+	margin-bottom: -15px;
+	cursor: pointer;
+	display: none;
+}
+#banner .midtop span:last-child{
+	right: 0;
+}
+#banner .midtop:hover span{
+	display: inline-block
+}
+/* 中间下图 */
+#banner .midbtm{
+	width: 790px;
+	height: 140px;
+	/* background: red; */
+	/* float: left; */
+}
+#banner .midbtm .fl{
+	width: 390px;
+	height: 140px;
+	margin-top: 10px;
+}
+#banner .midbtm .fl:first-child{
+	margin-right: 10px;
+}
+
+/* 右侧信息框 */
+#banner .fr{
+	width: 191px;
+	height: 480px;
+	background: #fff;
+}
+/* 右侧信息栏顶部登陆注册栏 */
+#banner .fr .dlzc{
+	width: 160px;
+	padding:15px;
+	border-bottom:1px solid #e6e6e6;
+}
+#banner .fr .tx{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: url(../images/no_login.jpg) no-repeat;
+	background-size: 50px 50px;
+	float: left;
+}
+#banner .fr .txzc .zc{
+	padding-top: 6px;
+	padding-left: 8px;
+}
+#banner .fr .dlzc .btn>div{
+	width: 70px;
+	height: 21px;
+	border: 2px solid #e01222;
+	text-align: center;
+	line-height: 21px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+/* #banner .fr .dlzc .btn>div:hover{
+	background: red;
+} */
+
+#banner .fr .dlzc .btn>div:last-child{
+	margin-right: 0px;
+}
+#banner .fr .dlzc .btn>div a{
+	color: red;
+	width: 70px;
+	height: 21px;
+	display: inline-block;
+}
+#banner .fr .dlzc .btn>div:hover a{
+	color: white;
+	background: red
+}
+ /* 右侧信息栏中部信息栏 */
+	/* 信息栏上部小导航 */
+#banner .fr .mid .nav{
+	margin-left: 13px;
+	width: 162px;
+	height: 26px;
+	border-bottom: 1px solid #e6e6e6;
+	/* background: red */
+}
+#banner .fr .mid .nav li{
+	float: left;
+	line-height: 26px;
+}
+#banner .fr .mid .nav li.line{
+	height: 18px;
+	margin: 5px 17px 0 10px;
+	border-left: 1px solid #e6e6e6
+}
+#banner .fr .mid .nav li:last-child{
+	float: right
+}
+#banner .fr .mid .nav li:first-child a{
+	width: 29px;
+	height: 26px;
+	display: inline-block; 
+	border-bottom: 2px solid #e01222
+}
+#banner .fr .mid .xxl{
+	margin-top: 18px;
+}
+#banner .fr .mid .xxl ul{
+	padding-left: 13px;
+	margin-bottom: 14px;
+}
+#banner .fr .mid .xxl ul li{
+	height: 25px;
+}
+/* 右侧信息栏中部信息栏下部分图片导航 */
+#banner .fr .btm li{
+	width: 47px;
+	height: 24px;
+	/* margin: 1px 1px 0 0; */
+	float: left;
+	position: relative;
+	padding-top: 45px;
+	text-align: center;
+	border-top: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+}
+#banner .fr .btm li h4{
+	cursor: pointer
+}
+#banner .fr .btm li h4:hover{
+	color: red
+}
+#banner .fr .btm li:nth-child(4n){
+	/* margin-right: 0 */
+	border-right:none
+}
+#banner .fr .btm li span{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 14px;
+	left: 13px;
+	background:url(../images/sprite_fs@1x.png) no-repeat
+}
+#banner .fr .btm li .cut{
+	width: 30px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../images/sprite_index@1x.png) no-repeat -104px -40px;
+	color: white;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	transform: scale(0.5,0.5);
+	transform-origin: right top;
+}
+/* 网页的底部   	B=============== */
+#footer{
+	margin-top: 100px;
+	background: #eaeaea;
+	height: 500px;
+}
+#footer .cot1{
+	height: 102px;
+	padding-left: 34px;
+}
+/* ftop */
+#footer .ftop{
+	height: 72px;
+	padding-top: 30px;
+}
+#footer .ftop li{
+	float: left;
+	width: 298px;
+	font-size: 18px;
+}
+#footer .ftop li:last-child{
+	width: 208px
+}
+#footer .ftop li span{
+	vertical-align: middle;
+	display: inline-block;
+	width: 36px;
+	height: 42px;
+	background: url(../images/ico_service.png) no-repeat;
+}
+/* 水平线 */
+#footer div.line{
+	/* height: 1px;
+	width: 1600px; */
+	border-top: 1px solid #aaa;
+}
+#footer dl{
+	float: left;
+	width: 198px;
+	font-size: 12px;
+}
+#footer dt{
+	font-weight: bold;
+	height: 28px;
+	
+}
+#footer dd{
+	height: 22px;
+}
+#footer dl:last-child{
+	height: 151px;
+	text-align: center;
+	background: url(../images/ico_footer.png) no-repeat 0 0;
+}
+#footer dl:last-child p{
+	width: 180px;
+	margin-left: 8px;
+
+}
+#footer dl:last-child dd{
+	float: right
+}
+#footer>div.line{
+	margin-bottom: 22px;
+}
+#footer .cot2 div.line{
+	margin-top: 22px;
+}
+/* 网页底部的友情链接什么的 */
+#footer .fbtm ul{
+	margin: 0 auto;
+}
+
+#footer .fbtm li{
+	float: left;
+}
+#footer .fbtm ul:first-child{
+	font-weight: bold;
+	margin-left: 63px;
+	height: 38px;
+	line-height: 38px;
+}
+#footer .fbtm ul:first-child li.line{
+	height: 10px;
+	margin: 13px 10px 0px;
+	border: 1px solid #666;
+}
+#footer .fbtm ul+ul{
+	height: 22px;
+	line-height: 22px
+}
+#footer .fbtm ul+ul li.line{
+	height: 10px;
+	margin: 5px 10px 0px;
+	border: 1px solid #666;	
+}
+#footer .fbtm ul:nth-child(2){
+	margin-left: 207px;
+}
+#footer .fbtm ul:nth-child(3){
+	margin-left: 174px;
+}
+#footer .fbtm ul:nth-child(4){
+	margin-left: 338px;
+}
+#footer .fbtm ul:nth-child(5){
+	margin-left: 506px;
+}
+
+/* fpic */
+#footer .fbtm .fpic{
+	margin-top: 15px;
+	padding-left: 240px
+}
+#footer .fbtm .fpic li{
+	float: left;
+	width: 103px;
+	height: 32px;
+	margin-right: 10px;
+}
+#footer .fbtm .fpic li:nth-child(1){
+
+	background: url(../images/ico_footer.png) no-repeat 0 -151px;
+}
+#footer .fbtm .fpic li:nth-child(2){
+
+	background: url(../images/ico_footer.png) no-repeat 0 -184px;
+}
+#footer .fbtm .fpic li:nth-child(3){
+
+	background: url(../images/ico_footer.png) no-repeat 0 -217px;
+}
+#footer .fbtm .fpic li:nth-child(4){
+
+	background: url(../images/ico_footer.png) no-repeat -104px -151px;
+}
+#footer .fbtm .fpic li:nth-child(5){
+
+	background: url(../images/ico_footer.png) no-repeat -104px -184px;
+}
+#footer .fbtm .fpic li:nth-child(6){
+
+	background: url(../images/ico_footer.png) no-repeat -104px -217px;
+}
+/* 网页的底部   	E=============== */
